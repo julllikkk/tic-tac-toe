@@ -7,12 +7,12 @@ interface GameOverModalProps {
 }
 
 const GameOverModal: FC<GameOverModalProps> = ({ isOpen, status, onClose }) => {
-    if (!isOpen || status === 'playing') return null; // Добавлена проверка на 'playing'
+    if (!isOpen || status === 'playing') return null;
 
     const messages = {
-        win: 'Поздравляем! Вы выиграли!',
-        lose: 'К сожалению, вы проиграли.',
-        draw: 'Ничья! Попробуйте еще раз.'
+        win: 'Поздравляем! Вы выиграли!🎉',
+        lose: 'К сожалению, вы проиграли😿',
+        draw: 'Ничья! Попробуйте еще раз😺'
     };
 
 

@@ -23,7 +23,10 @@ export default function App() {
 
     useEffect(() => {
         if (gameStatus !== 'playing') {
-            setShowModal(true);
+            const timer = setTimeout(() => {
+                setShowModal(true);
+            }, 600);
+            return () => clearTimeout(timer);
         }
     }, [gameStatus]);
 
